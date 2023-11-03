@@ -11,6 +11,8 @@ You can really make use of this to make a desktop client to anything website.
 ## Features
 - Minimize to tray, a feature that almost all music streaming services offer.
 
+- The only way to close is from the **System Tray** > **TikTok Music** > **Quit**, I'll update this to be an option in the future.
+
 ## How to Run/Build
 
 First, install `electron` and `electron-builder` globally to use this application properly.

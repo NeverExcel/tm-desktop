@@ -16,7 +16,7 @@
     "music"
   ],
   "author": "ItzzExcel",
-  "icon": "icon.png",
+  "icon": "icon.ico",
   "license": "MIT",
   "devDependencies": {
     "electron": "^27.0.2"

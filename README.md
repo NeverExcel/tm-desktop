@@ -14,7 +14,7 @@ https://snapcraft.io/tm-desktop
 
 And you can install it using 
 ```sh
-sudo snap install --edge tm-desktop
+sudo snap install tm-desktop
 ```
 
 ## Features

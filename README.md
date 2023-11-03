@@ -8,6 +8,15 @@ TikTok Music is only available in very few countries, including mine. Since I fr
 You can really make use of this to make a desktop client to anything website.
 <hr/>
 
+## Mirrors
+The only official mirror for the tm-desktop package is snapcraft.io
+https://snapcraft.io/tm-desktop
+
+And you can install it using 
+```sh
+sudo snap install --edge tm-desktop
+```
+
 ## Features
 - Minimize to tray, a feature that almost all music streaming services offer.
 

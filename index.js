@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Tray, Menu } = require('electron');
+const { app, BrowserWindow, Tray, Menu, protocol } = require('electron');
 // const Store = require('electron-store');
 const path = require('path');
 
@@ -128,6 +128,10 @@ function ToggleSettingsWindow() {
 }
 
 app.on('ready', async () => {
+    protocol.registerStringProtocol('bytedance', (request, callback) => {
+        console.log("PREVENTED BYTEDANCE DIALOG");
+    })
+
     createWindow();
 
     appIcon = new Tray(path.join(__dirname, 'icon.png'));
@@ -138,17 +142,17 @@ app.on('ready', async () => {
             label: 'Quit',
             click: () => {
                 if (settingsWindow) {
-                    mainWindow.removeAllListeners('close'); 
+                    mainWindow.removeAllListeners('close');
                     mainWindow.close();
-    
-                    settingsWindow.removeAllListeners('close'); 
+
+                    settingsWindow.removeAllListeners('close');
                     settingsWindow.close();
-                    
+
                     app.quit();
                 } else {
-                    mainWindow.removeAllListeners('close'); 
+                    mainWindow.removeAllListeners('close');
                     mainWindow.close();
-    
+
                     app.quit();
                 }
             }

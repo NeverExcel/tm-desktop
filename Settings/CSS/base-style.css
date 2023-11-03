@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    transition: 0.7s;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: 0.7s ease-in-out;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    transition: 0.2s;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(15, 15, 15, 1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(30, 30, 30, 1);
+    transition: 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(35, 35, 35);
+    transition: 0.2s;
+}
+
+::selection {
+    background: #65648f;
+}
+
+.hov-und-anm {
+    display: inline-block;
+    position: relative;
+    color: gray;
+}
+
+.hov-und-anm:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: gray;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hov-und-anm:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+body {
+    background-color: rgb(16, 16, 19);
+    text-align: justify !important;
+    transition: 0.7s;
+}
+
+.main {
+    background-image: linear-gradient(315deg, #101010, #090909);
+}
+
+.nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    backdrop-filter: saturate(120%) blur(20px);
+}
+
+.largenav>ul {
+    list-style: none;
+    display: inline-flex;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.largenav>ul>li {
+    color: gray;
+    background-color: transparent;
+    font-family: "Space Grotesk", monospace;
+    margin: 10px;
+}
+
+.largenav>ul>li:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    color: gray;
+}
+
+.current {
+    transition: 300ms;
+    color: white !important;
+    font-weight: 600;
+}

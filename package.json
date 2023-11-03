@@ -1,0 +1,27 @@
+{
+  "name": "tm-desktop",
+  "version": "0.8.1",
+  "description": "A desktop client for TikTok Music built in electron.",
+  "main": "index.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "tiktok",
+    "tiktok music",
+    "music",
+    "streaming",
+    "service",
+    "music"
+  ],
+  "author": "ItzzExcel",
+  "icon": "icon.png",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^27.0.2"
+  },
+  "dependencies": {
+    "electron-store": "^8.1.0"
+  }
+}

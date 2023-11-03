@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Music</title>
+    <link rel="stylesheet" href="CSS/base-style.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="shortcut icon" href="../icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="main" class="main">
+        <nav class="nav">
+            <div class="largenav">
+                <ul style="align-items: center;">
+                    <li class="defaultcursor"><img class="defaultcursor" src="../icon.png" id="musiclogo"></li>
+                    <li class="hov-und-anm Headertwo defaultcursor">Settings | TikTok Music</li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="getfullscreen">
+            <div class="settingsbox">
+                <ul class="settings-wrapper">
+                    <li>
+                        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+                            <input type="checkbox" id="switch-1" class="mdl-switch__input" unc>
+                            <span class="mdl-switch__label">Close button will minimize the app window</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="worker.js"></script>
+</body>
+</html>

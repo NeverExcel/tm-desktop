@@ -1,0 +1,60 @@
+.Headertwo {
+    color: white !important;
+    font-size: x-large;
+    cursor: default !important;
+}
+
+.defaultcursor {
+    cursor: default;
+}
+
+#musiclogo {
+    width: 50px;
+    height: 50px;
+}
+
+.settingsbox {
+    display: block; /* Cambia la pantalla de bloque (block) a lista (list) */
+    color: white !important;
+    font-family: 'Montserrat';
+}
+
+.settingsbox>div {
+    border-radius: 5px;
+    min-width: 500px;
+    padding: 10px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    font-family: 'Montserrat';
+}
+
+.settings-wrapper {
+    list-style-type: none;
+    padding: 0; /* Elimina el relleno de la lista */
+}
+
+.settings-wrapper li {
+    display: flex; /* Utiliza flexbox para alinear elementos horizontalmente */
+    align-items: center; /* Alinea verticalmente en el centro */
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
+
+.mdl-switch__label {
+    margin-left: 10px; /* Espacio entre el switch y el texto */
+}
+
+.getfullscreen {
+    z-index: 2;
+    display: grid;
+    min-width: 100%;
+    min-height: 100vh;
+    text-align: left;
+    place-items: left;
+    align-items: center;
+    border-bottom-color: white;
+}
+
+.settings-wrapper {
+    list-style-type: none;
+    margin-left: 30px;
+}

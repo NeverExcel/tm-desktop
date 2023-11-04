@@ -1,11 +1,22 @@
 const { app, BrowserWindow, Tray, Menu, protocol } = require('electron');
 // const Store = require('electron-store');
 const path = require('path');
+const singleInstanceLock = app.requestSingleInstanceLock();
 
 let mainWindow;
 let settingsWindow;
 let appIcon;
 // const localStorage = new Store();
+
+if (!singleInstanceLock) {
+    app.quit();
+} else {
+    app.on('second-instance', () => {
+        if (mainWindow) {
+            if (mainWindow.isMinimized()) mainWindow.restore();
+            mainWindow.focus();
+        }
+    });}
 
 function createWindow() {
     mainWindow = new BrowserWindow({

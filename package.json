@@ -19,7 +19,8 @@
   "icon": "icon.ico",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^27.0.2"
+    "electron": "^27.0.2",
+    "electron-reloader": "^1.2.3"
   },
   "dependencies": {
     "electron-store": "^8.1.0"

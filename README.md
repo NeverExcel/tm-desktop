@@ -2,7 +2,7 @@
 
 A desktop application designed to achieve compatibility with Linux devices.
 
-blud
+bludd
 
 ## Why?
 TikTok Music is only available in very few countries, including mine. Since I frequently use Linux and the company has not released an application for Linux, I know that many others, not just me, need a solution. We need a way to enjoy the streaming service without having to rely on the annoying web browser tab at `https://music.tiktok.com/player`. That's why I created this project.
